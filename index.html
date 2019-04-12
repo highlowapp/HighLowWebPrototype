@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>High/Low</title>
+		<meta charset='utf-8'>
+
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
+		<style>
+
+			html, body {
+				font-family: sans-serif;
+			}
+
+			#tabbar {
+				position: fixed;
+				bottom: 0px;
+				width: 100%;
+				border-top: 1px solid lightgray;
+				padding-top: 10px;
+				background-color: rgb(250, 250, 250);
+				left: 0px;
+			}
+
+			#navbar {
+				position: fixed;
+				top: 0px;
+				left: 0px;
+				width: 100%;
+				text-align: center;
+				height: 4em;
+				background-color: rgb(247, 0, 70);
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				color: white;
+				font-size: 2em;
+				flex-direction: column;
+				border-bottom: 1px solid lightgray;
+			}
+
+			#navbar-small {
+				font-size: 0.5em;
+				margin: 5px;
+			}
+
+			#main-screen {
+				margin-top: 10em;
+				padding-left: 1em;
+				padding-right: 1em;
+			}
+
+			.high {
+				font-size: 1.5em;
+			}
+
+			.low {
+				font-size: 1.5em;
+			}
+
+			.options-container {
+				width: 100%;
+				display: flex;
+				justify-content: center;
+				margin-bottom: 4em;
+			}
+
+			.option {
+				line-height: 0px;
+				color: white;
+				background: rgb(247, 101, 34);
+				width: 2em;
+				height: 2em;
+				border-radius: 100%;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				margin-left: 0.5em;
+				margin-right: 0.5em;
+				box-shadow: gray 3px 3px 10px;
+			}
+
+			.likes {
+				float: right;
+				color: rgb(247, 0, 70);
+				font-size: 2em;
+				margin-right: 3em;
+			}
+
+			.like_num {
+				font-size: 50px;
+			}
+
+			.likes .material-icons {
+				font-size: 50px;
+			}
+
+			.tab-item {
+				float:left;
+				width: 25%;
+				text-align:center;
+				line-height:1px;
+				color: lightgray;
+				font-size: 20px;
+			}
+
+			.material-icons {
+				font-size: 50px;
+				display: inline-flex;
+				vertical-align: top;
+			}
+
+			.tab-item.active {
+				color: rgb(247, 0, 70);
+			}
+
+		</style>
+	</head>
+	<body>
+		<header id="navbar">
+			<div>Today</div>
+			<div id='navbar-small'>September 4, 2020</div>
+		</header>
+
+		<div id="main-screen">
+			
+			<div class="high">
+				<h3>High</h3>
+
+				<div class="options-container">
+					
+					<div class='option material-icons'>text_fields</div>
+					<div class='option material-icons'>photo_camera</div>
+					<div class='option material-icons'>videocam</div>
+
+				</div>
+
+				
+			</div>
+
+			<div class='low'>
+
+				<h3>Low</h3>
+
+				<div class="options-container">
+					
+					<div class='option material-icons'>text_fields</div>
+					<div class='option material-icons'>photo_camera</div>
+					<div class='option material-icons'>videocam</div>
+
+				</div>
+
+			</div>
+
+			<div class='likes'><span class='like_num'>3</span><span class='material-icons'>favorite</span></div>
+			
+
+			<hr>
+
+			<div class="comments">
+
+				<div class='comment'>
+
+					<img class='profile_image' src="https://randomuser.me/api/portraits/med/men/19.jpg">
+					<b class='name'>Person Name</b>
+					<br>
+					<p class='comment_content'>This is my comment</p>
+
+				</div>
+
+			</div>
+		</div>
+
+		<footer id="tabbar">
+			
+			<div class='tab-item active'>
+				
+				<div class='material-icons'>home</div>
+				<br>
+				<p>Home</p>
+
+			</div>
+
+			<div class='tab-item'>
+				
+				<div class='material-icons'>filter_list</div>
+				<br>
+				<p>Feed</p>
+
+			</div>
+
+			<div class='tab-item'>
+				
+				<div class='material-icons'>person</div>
+				<br>
+				<p>Profile</p>
+
+			</div>
+
+			<div class='tab-item'>
+				
+				<div class='material-icons'>settings</div>
+				<br>
+				<p>Settings</p>
+
+			</div>
+
+		</footer>
+	</body>
+</html>
